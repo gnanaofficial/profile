@@ -1,0 +1,26 @@
+.somecolor {
+  color: #c8c4c1;
+}
+
+.morphing-text {
+  position: relative;
+  height: 4rem; /* Adjust height as needed */
+  overflow: hidden;
+}
+.text {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out, filter 1.5s ease-in-out;
+}
+.text.visible {
+  opacity: 1;
+}
+.orangee {
+  color: #e37128;
+}
+body {
+  font-family: "Outfit", sans-serif;
+}

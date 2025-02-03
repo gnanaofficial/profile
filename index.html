@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+  />
+  <link rel="stylesheet" href="./style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <title>Document</title>
+</head>
+<body>
+  <div class="flex flex-col h-20 items-left pl-10 pt-5 rounded-2xl">
+    <h1 class="font-bold text-5xl">Hi, I am Gnana Sekhar !</h1>
+    <h1 class="text-5xl somecolor font-bold">
+      I'm a
+      <span id="text1" class="text-black visible morphing-text mx-auto"
+        >UI/UX Designer</span
+      >
+      at
+    </h1>
+  </div>
+
+  <div class="font-bold flex flex-col h-20 items-left pl-10 pt-20">
+    <h1>
+      <span class="text-5xl font-bold orangee">WEBORTEX. </span>
+      <button class="outline-2 outline-solid">Open to work</button>
+    </h1>
+  </div>
+
+  <script>
+    const texts = ["UI/UX", "WEB DEV", "APP DEV"];
+    let textIndex = 0;
+
+    const text1 = document.getElementById("text1");
+
+    const morphTime = 1500; // 1.5 seconds
+    const cooldownTime = 500; // 0.5 seconds
+
+    const morph = () => {
+      text1.classList.remove("visible");
+      // text2.classList.add("visible");
+
+      setTimeout(() => {
+        textIndex = (textIndex + 1) % texts.length;
+        text1.textContent = texts[textIndex];
+        text2.textContent = texts[(textIndex + 1) % texts.length];
+
+        text1.classList.add("visible");
+        text2.classList.remove("visible");
+      }, morphTime);
+    };
+
+    setInterval(morph, morphTime + cooldownTime);
+  </script>
+</body>
