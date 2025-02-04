@@ -24,3 +24,32 @@
 body {
   font-family: "Outfit", sans-serif;
 }
+.hover-saturation {
+  filter: saturate(80%);
+}
+.decrease-saturation {
+  filter: saturate(10%);
+}
+.w-heightt {
+  width: 7.5rem;
+  height: 7.5rem;
+  position: relative;
+  bottom: 1rem;
+}
+
+.image-box {
+  filter: saturate(15%);
+  transition: transform 0.3s; 
+}
+
+.image-box:hover {
+  transform: scale(1.05);
+  filter: saturate(80%);
+}
+.status-dot {
+  width: 10px;                 /* Dot width */
+  height: 10px;                /* Dot height */
+  background-color: green;     /* Dot color */
+  border-radius: 50%;          /* Make it circular */
+  margin-right: 8px;           /* Space between dot and text */
+}

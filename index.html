@@ -18,10 +18,17 @@
 <body>
   <div class="flex flex-col items-left pl-10 pt-5 rounded-2xl">
     <div class="flex flex-row">
-      <h1 class="font-bold text-5xl">Hi, I am</h1>
-      <img class="h-20 border-5 rounded-2xl w-15" src="./IMG_0195.JPG" alt="" />
-      <h1 class="font-bold text-5xl">Gnana Sekhar!</h1>
+      <h1 class="font-bold text-5xl pr-1">Hi, I am</h1>
+      <div class="overflow-hidden  border-4 w-20 h-20 border-solid rounded-3xl">
+        <img
+          class="object-cover w-heightt filter  image-box"
+          src="./IMG_0195.JPG"
+          alt=""
+        />
+      </div>
+      <h1 class="font-bold text-5xl pl-1">Gnana Sekhar!</h1>
     </div>
+
     <h1 class="text-5xl somecolor font-bold">
       I'm a
       <span id="text1" class="text-black visible morphing-text mx-auto"
@@ -31,11 +38,28 @@
     </h1>
   </div>
 
-  <div class="font-bold flex flex-col h-20 items-left pl-10 pt-20">
+  <div class="font-bold flex flex-col h-20 items-left pl-10">
     <h1>
-      <span class="text-5xl font-bold orangee">WEBORTEX. </span>
-      <button class="border-2 rounded-2xl border-solid">Open to work</button>
+      <span class="text-5xl font-bold orangee pr-6">Webortex. </span>
+      <button class="border-2 relative   font-medium h-12 w-48 rounded-3xl border-solid ">
+        <!-- <span class=" absolute w-4 h-4  bg-green-400  pl-5 rounded-full mr-2"></span>
+        <span class="w-8 h-8   bg-green-200  pl-5 rounded-full mr-2"></span> -->
+        
+        <div class="flex  ">
+          <span class="absolute  top-0  ml-3 my-1  w-8 h-8 rounded-full bg-green-200 bg-opacity-400 blur-xl"></span>
+          <span class="absolute top-0  ml-4 mt-2 w-5 h-5 rounded-full bg-green-400 bg-opacity-80 blur-xl"></span>
+        </div>
+        Open to work
+      </div></button>
     </h1>
+    <div class="pl-8 pt-5 flex ">
+      <div class="pt-1">
+    <button class="border-2  relative bg-black text-white   font-medium h-16 w-48 rounded-full border-solid ">Book a call </button>
+  </div>
+    <div class="w-3/5 pl-6 ">
+    <span class="font-medium    text-2xl">Feel free to explore my portfolio and reach out  -I'd love to connect!</span>
+  </div>
+  </div>
   </div>
 
   <script>
